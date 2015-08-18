@@ -1,6 +1,5 @@
 import React from 'react';
-import Hello from './component';
-import './main.css';
+import Hello from './modules/MyComponent';
 
 main();
 

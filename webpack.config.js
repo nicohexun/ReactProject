@@ -6,7 +6,7 @@ config = {
     entry: ['webpack/hot/dev-server', path.resolve(__dirname, 'app/main.js')],
     resolve: {
         alias: {
-          'react': pathToReact
+            'react': pathToReact
         }
     },
     output: {
@@ -18,11 +18,11 @@ config = {
             test: /\.jsx?$/,
             loader: 'babel'
         }, {
-					test: /\.css$/, // Only .css files
-					loader: 'style!css' // Run both loaders
-				}],
+            test: /\.css$/, // Only .css files
+            loader: 'style!css' // Run both loaders
+    }],
         noParse: [pathToReact]
-    }    
+    }
 };
 
 module.exports = config;
